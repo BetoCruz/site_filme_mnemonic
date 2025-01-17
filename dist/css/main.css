@@ -214,6 +214,19 @@
   font-family: "Roboto Mono", serif;
 }
 
+.footer__container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #ffffff;
+  padding: 32px;
+}
+.footer__container h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 16px;
+  font-family: "Sixtyfour Convergence", serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
