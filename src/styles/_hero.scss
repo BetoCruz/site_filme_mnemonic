@@ -1,0 +1,44 @@
+@use'variaveis';
+.hero{
+    padding: 5.6vw;
+    padding-top: 10px;
+    min-height: 80vh;
+    background-color: #000000;
+    background-image: url('../../images/johnny_mnemonic_hero.jpg');
+    text-align: center;
+    background-size: cover;
+    // border: 3px solid orangered;
+
+    &__content{
+        // border: 3px solid rgb(186, 239, 12);
+        // display: flex;
+        &__branding{
+            max-height:100%;
+            border: 3px solid #fff;
+            
+        }
+    }
+    &__links{
+        display:flex;
+        justify-content:flex-start;
+        @media (max-width:768px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item{
+            padding-top: 8px;
+            background-color: #000000;
+            margin-right: 32px;
+            border: 5px inset #fff;
+            h3{
+                font-family:variaveis.$convergence;
+                font-size: 12px;
+                padding-bottom:8px;
+            }
+            img{
+                height: 120px;
+            }
+        }
+    }
+}

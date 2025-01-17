@@ -1,0 +1,227 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: black;
+  transition: 0.5s ease;
+  padding: 8px;
+  z-index: 1;
+  border-bottom: 1px solid #fff;
+}
+.header--is-hidden {
+  background-color: transparent;
+  transition: 0.5s ease;
+}
+.header--is-hidden .header__logo {
+  border: 5px insert red;
+}
+.header--is-hidden .header__links__item {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header__container {
+    display: block;
+    width: 100%;
+  }
+}
+.header__logo {
+  max-width: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.header__logo img {
+  max-width: 40px;
+  border: 3px double #4aff71;
+  margin-right: 8px;
+}
+.header__logo h1 {
+  font-size: 32px;
+  font-family: "Sixtyfour Convergence", serif;
+}
+.header__links {
+  padding-top: 16px;
+  display: flex;
+}
+.header__links__item {
+  padding-right: 64px;
+  font-family: "Sixtyfour Convergence", serif;
+}
+.header__links__item a {
+  color: #fff;
+}
+
+.hero {
+  padding: 5.6vw;
+  padding-top: 10px;
+  min-height: 80vh;
+  background-color: #000000;
+  background-image: url("../../images/johnny_mnemonic_hero.jpg");
+  text-align: center;
+  background-size: cover;
+}
+.hero__content__branding {
+  max-height: 100%;
+  border: 3px solid #fff;
+}
+.hero__links {
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 768px) {
+  .hero__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.hero__links__item {
+  padding-top: 8px;
+  background-color: #000000;
+  margin-right: 32px;
+  border: 5px inset #fff;
+}
+.hero__links__item h3 {
+  font-family: "Sixtyfour Convergence", serif;
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+.hero__links__item img {
+  height: 120px;
+}
+
+.sinopse {
+  padding: 32px;
+  padding-top: 64px;
+}
+.sinopse__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .sinopse__content {
+    display: block;
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  .sinopse__content::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/johnny-mnemonic-hero_content.jpg");
+    inset: 0;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3;
+    border: 1px inset #fff;
+  }
+}
+.sinopse__branding {
+  margin-left: 32px;
+  max-width: 500px;
+  border: 3px inset #1005e3;
+  border-radius: 10px 100px/120px;
+}
+@media (max-width: 768px) {
+  .sinopse__branding {
+    display: none;
+  }
+}
+.sinopse__texto {
+  font-family: "Roboto Mono", serif;
+  color: greenyellow;
+  display: block;
+}
+@media (max-width: 768px) {
+  .sinopse__texto {
+    color: #fff;
+  }
+  .sinopse__texto p {
+    padding: 16px;
+  }
+}
+.sinopse__texto h3 {
+  font-family: "Sixtyfour Convergence", serif;
+  font-size: 40px;
+}
+.sinopse__texto p {
+  font-family: "Roboto Mono", serif;
+  font-size: 40;
+  letter-spacing: 2e;
+}
+.sinopse__h3 {
+  margin: 5px;
+}
+
+.ficha {
+  padding: 32px;
+  background-color: #000;
+  display: block;
+  align-items: center;
+}
+.ficha__h2 {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-family: "Sixtyfour Convergence", serif;
+  text-align: center;
+}
+.ficha__quadro {
+  padding-top: 24px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .ficha__quadro {
+    display: block;
+  }
+}
+.ficha__img {
+  max-width: 500px;
+  border: 5px inset #1005e3;
+  border-radius: 10px;
+  padding-top: 16px;
+}
+@media (max-width: 768px) {
+  .ficha__img {
+    max-width: 100px;
+  }
+}
+.ficha__lista {
+  display: block;
+  padding: 32px;
+}
+.ficha__lista__item {
+  padding-bottom: 32px;
+  color: greenyellow;
+}
+.ficha__lista__item h3 {
+  font-family: "Sixtyfour Convergence", serif;
+}
+.ficha__lista__item p {
+  font-family: "Roboto Mono", serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #000;
+}
